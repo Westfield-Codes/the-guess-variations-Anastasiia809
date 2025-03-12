@@ -8,7 +8,7 @@ function guessGame() {
   // create guess and set equal to 0 
   let guess = 0;
   // loop while guess is not equal to answer or to "q"
-  while (guess != answer || guess != "q") {
+  while (guess != answer && guess != "q") {
     // set guess equal to asking user to "Guess a number, 1-100"
     guess = prompt("Guess a number, 1-100");
     // if guess equals "q" display "Quitter!"
