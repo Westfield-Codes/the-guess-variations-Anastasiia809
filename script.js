@@ -1,3 +1,4 @@
+
 /* Guess Game Program by Anastasiia
  * Adds the ability to play again. 
  */
@@ -9,7 +10,7 @@
 // define function newGame
 function newGAme() {
   // create a Boolean variable for again, set to true
-  var again = confirm("Do you wanna play again?");
+  let again = true;
   // loop as long as again is true 
   while (again == true) {
     // run the guessGame function 
@@ -27,11 +28,11 @@ function newGAme() {
 // create a function called guessGame 
 function guessGame() {
   // create guess and set equal to 0 
-  var guess = 0;
+  let guess = 0;
   // create tries and set equal to 0 
-  var tries = 0;
+  let tries = 0;
   // create variable answer and generate a random integer 1-100
-  var answer = Math.floor(Math.random()*100+1);
+  let answer = Math.floor(Math.random()*100+1);
   // display the integer for testing purposes only
   alert(answer);
   // loop while guess is not equal to answer
