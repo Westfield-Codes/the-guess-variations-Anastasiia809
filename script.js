@@ -38,13 +38,13 @@ function guessGAme() {
     // if guess equals answer display "Correct in [tries] tries!" 
     if (guess == answer) alert("Correct in " + tries + " tries!");
     // or if guess is "q" break the loop
-
+    else if (guess == "q") break;
     // or if guess is greater than answer display "Too high!" 
-
+    else if (guess > answer) alert("Too high!");
     // or if guess is less than answer display "Too low!" 
-
+    else if (guess < answer) alert("Too low!" );
     // if it's none of those, say "Bad Input!"
-
+    else alert("Bad Input!");
     // end the loop
   }
   // end the function
